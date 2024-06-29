@@ -4,5 +4,5 @@ provider "aws" {
 
 resource "aws_instance" "ubuntu-apache" {
   ami           = var.ami_id
-  instance_type = t2.micro
+  instance_type = "t2.micro"
 }
