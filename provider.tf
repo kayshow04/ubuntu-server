@@ -11,4 +11,12 @@ resource "aws_instance" "ubuntu-apache" {
    tags = {
      Name = "ubuntu-apache"
    }
- }
+
+   user_data = <<-EOF
+              #!/bin/bash
+              apt-get update
+              apt-get install -y apache2
+              systemctl start apache2
+              systemctl enable apache2
+
+}
