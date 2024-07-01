@@ -18,4 +18,6 @@ resource "aws_instance" "ubuntu-apache" {
               apt-get install -y apache2
               systemctl start apache2
               systemctl enable apache2
+              echo '<html><h1>Hello for test purpose, Terraform!</h1></html>' > /var/www/html/index.html
+              EOF
 }
