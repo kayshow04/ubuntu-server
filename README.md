@@ -25,7 +25,7 @@ Then, merge your feature branch into master #optional
 Configure Terraform
 Initialize Terraform in the project directory
 Create Ubuntu Server with Apache2
-Apply Terraform configuration to create the server
+Apply Terraform configuration to create the server.
 Accessing the Server
 Once provisioned, Terraform will output the public IP address of the server. You can SSH into the server using
 ==> Backup index.html
