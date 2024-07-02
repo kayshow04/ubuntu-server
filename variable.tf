@@ -7,3 +7,8 @@ variable "aws_region" {
   type        = string
   default     = "us-east-1"
 }
+
+variable "vpc_id" {
+  description = "vpc-048d06c035b9550cc"
+  type        = string
+}
